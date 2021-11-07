@@ -17,7 +17,7 @@ val.addEventListener('submit',(e)=>{
     {
         return console.log("Enter the seatch ele")
     }
-    fetch(`http://localhost:3000/weather?address=${serachData}`)
+    fetch(`/weather?address=${serachData}`)
   .then((data) => {
     return data.json();
   })
